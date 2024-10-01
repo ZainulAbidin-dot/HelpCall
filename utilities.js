@@ -5,13 +5,11 @@ function showConfirmMessage() {
         const telLink = document.getElementById("tel");
         telLink.click(); // This will open the dialer on mobile devices
 
-        // Reopen the confirm message after dialing
         setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
     } else {
         const telLink = document.getElementById("tel");
         telLink.click(); // This will open the dialer on mobile devices
 
-        console.log("User canceled the call.");
         setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
     }
 }
