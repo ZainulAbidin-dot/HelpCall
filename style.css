@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+}
+
+header {
+    position: relative;
+    height: 45vh;
+    background-color: #f4f4f4;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    font-size: 98px;
+    color: white;
+    font-weight: bold;
+    z-index: 2; /* Ensures the text is above the image and overlay */
+}
+
+main {
+    padding: 20px 20%;
+    background-color: #ffffff;
+    flex-grow: 2;
+}
+
+main section {
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333bd;
+}
+
+main section h1 {
+    font-size: 46px;
+    font-weight: lighter;
+}
+
+main section  {
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+footer {
+    background-color: #cdcdcd;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 3px;
+}
+
+footer nav ul li a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    
+    footer {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    footer nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        height: 50vh; /* Decrease header height for mobile */
+    }
+
+    .overlay-text {
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 55vh; /* Further decrease header height for smaller devices */
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main section h1 {
+        font-size: 34px;
+        font-weight: 400;
+    }
+
+    main section p {
+        font-size: 22px;
+    }
+
+    footer {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
+
+    .overlay-text { 
+        font-size: 68px;
+    }
+}
