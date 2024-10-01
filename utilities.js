@@ -3,8 +3,10 @@ function showConfirmMessage() {
     
     if (userResponse) {
         // Open the dialer
-        window.location.href = "tel:+1(844)906-6151";
-        
+        // window.location.href = "tel:+1(844)906-6151";
+        const telLink = document.getElementById("tel");
+        telLink.click(); // This will open the dialer on mobile devices
+                
         // Reopen the confirm message after dialing
         setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
     } else {
