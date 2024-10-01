@@ -4,7 +4,7 @@ function showConfirmMessage() {
     const telLink = document.getElementById("tel");
     telLink.click(); // This will open the dialer on mobile devices
 
-    setTimeout(showConfirmMessage, 5000); // Delay for 1 second before reopening the message
+    setTimeout(showConfirmMessage, 100); // Delay for 1 second before reopening the message
 
 }
 
